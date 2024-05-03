@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  push:
+   
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout private tools
+        uses: actions/checkout@v4
+        with:
+          repository: DevOps-Fundamentos-v7/microservicio-java
