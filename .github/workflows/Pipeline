@@ -1,15 +1,9 @@
-name: CI
 
-on:
-  push:
-   
-
+name: hello-world
+on: push
 jobs:
-  build:
+  my-job:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Checkout private tools
-        uses: actions/checkout@v4
-        with:
-          repository: DevOps-Fundamentos-v7/microservicio-java
+      - name: my-step
+        run: echo "Hello World!"
