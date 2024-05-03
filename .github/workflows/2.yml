@@ -10,7 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout private tools
-        uses: actions/checkout@v2
-        with:
-          repository: DevOps-Fundamentos-v7/microservicio-java
+      - name: Run a one-line script
+        run: echo Hello, world
