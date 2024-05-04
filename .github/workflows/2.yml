@@ -31,7 +31,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
           push: true
-          tags: microservicio-java/prueba:latest
+          tags: microservicio-java/prueba:latest .
       
     - name: Docker build
       run: | 
