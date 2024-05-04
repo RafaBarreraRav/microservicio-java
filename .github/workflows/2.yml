@@ -35,7 +35,7 @@ jobs:
       
     - name: Docker build
       run: | 
-          docker build -t devopsusach/prueba:latest .
+          docker build -t prueba:latest .
           
           
     - name: Docker push
