@@ -33,9 +33,9 @@ jobs:
       
     - name: Docker build
       run: | 
-          docker build -t microservicio-java/proyecto:latest .
+          docker build -t microservicio-java/proyecto:lastest .
           
           
     - name: Docker push
       run: | 
-          docker push proyecto:latest
+          docker push microservicio-java/proyecto:lastest
