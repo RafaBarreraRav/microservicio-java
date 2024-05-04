@@ -38,4 +38,4 @@ jobs:
           
     - name: Docker push
       run: | 
-          docker push microservicio-java/proyecto:lastest
+          docker push devopsusach/prueba/proyecto:lastest
