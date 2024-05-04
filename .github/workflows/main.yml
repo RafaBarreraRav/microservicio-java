@@ -23,17 +23,10 @@ jobs:
       with:
         username: devopsusach
         password: ${{ secrets.DOCKER_PASS }}
-        
-    - name: Build and push
-      uses: docker/build-push-action@v5
-      with:
-          push: true
-          tags: devopsusach/microservicio-java:latest
       
     - name: Docker build
       run: | 
-          docker build -t microservicio-java/proyecto:lastest .
-          
+          docker build -t devopsusach/microservicio-java:proyecto .
           
     - name: Docker push
       run: | 
