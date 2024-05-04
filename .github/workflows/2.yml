@@ -32,7 +32,7 @@ jobs:
         
     - name: Docker build
       run: |
-         docker build -f microservicio-java -t proyecto:latest .
+         docker build -f microservicio-java/feature-ms-RafaelBarrera-mensaje -t proyecto:latest .
 
     - name: Docker push
       run: |
