@@ -26,12 +26,9 @@ jobs:
         username: devopsusach
         password: ${{ secrets.DOCKER_PASS }}
 
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v3
-
     - name: Docker build
       run: |
-        docker build -t proyecto:latets .
+        docker build -t microservicio-java/proyecto:latets .
 
     - name: Docker push
       run: |
