@@ -24,7 +24,11 @@ jobs:
         username: devopsusach
         password: ${{ secrets.DOCKER_PASS }}
 
-    - name: List files
-      run: |
-          ls -la
-   
+    - name: Docker build
+      run: | 
+          docker build -t microservicio-java/proyecto:lastest .
+          
+          
+    - name: Docker push
+      run: | 
+          docker push microservicio-java/proyecto:lastest
