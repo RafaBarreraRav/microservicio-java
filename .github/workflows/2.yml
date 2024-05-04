@@ -6,8 +6,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-      with:
-        repository: DevOps-Fundamentos-v7/microservicio-java
       
     - name: Setup Java JDK
       uses: actions/setup-java@v4.2.1
@@ -35,9 +33,9 @@ jobs:
       
     - name: Docker build
       run: | 
-          docker build -t prueba:latest .
+          docker build -t microservicio-java/proyecto:latest .
           
           
     - name: Docker push
       run: | 
-          docker push devopsusach/prueba:latest
+          docker push microservicio-java/proyecto:latest
