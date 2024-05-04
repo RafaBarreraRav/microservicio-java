@@ -35,9 +35,9 @@ jobs:
       
     - name: Docker build
       run: | 
-          docker build -t clagosu/ms-aumento-voto:latest .
+          docker build -t devopsusach/prueba:latest .
           
           
     - name: Docker push
       run: | 
-          docker push clagosu/ms-aumento-voto:latest
+          docker push devopsusach/prueba:latest
