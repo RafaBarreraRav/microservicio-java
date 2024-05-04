@@ -31,7 +31,7 @@ jobs:
 
     - name: Docker build
       run: |
-        docker build -t microservicio-java/proyecto:latets .
+        docker build -f proyecto:latets microservicio-java/Dockerfile .
 
     - name: Docker push
       run: |
