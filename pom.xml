@@ -20,12 +20,27 @@
     </properties>
 
     <dependencies>
-        <!-- tus dependencias existentes -->
+        <!-- Dependencia para Spring Boot Starter Web, incluye todas las dependencias relacionadas con Spring MVC -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Dependencia para Spring Boot Starter Test, incluye herramientas de testing como JUnit, Mockito, etc. -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <!-- tus plugins existentes -->
+            <!-- Plugin de Spring Boot Maven -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
 
             <!-- Agregar el plugin de Jacoco -->
             <plugin>
@@ -70,4 +85,3 @@
         </plugins>
     </build>
 </project>
-
