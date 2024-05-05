@@ -24,6 +24,22 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+
+		<dependencies>
+    <!-- Dependencia para Spring Boot Starter Web, incluye todas las dependencias relacionadas con Spring MVC -->
+   		 <dependency>
+       			 <groupId>org.springframework.boot</groupId>
+        		 <artifactId>spring-boot-starter-web</artifactId>
+    		</dependency>
+
+    <!-- Dependencia para Spring Boot Starter Test, incluye herramientas de testing como JUnit, Mockito, etc. -->
+    		<dependency>
+        		<groupId>org.springframework.boot</groupId>
+        		<artifactId>spring-boot-starter-test</artifactId>
+        		<scope>test</scope>
+    		</dependency>
+		</dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
