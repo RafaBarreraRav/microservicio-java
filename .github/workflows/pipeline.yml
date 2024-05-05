@@ -17,8 +17,12 @@ jobs:
     - name: Compilacion
       run: |
           mvn package
+
+    - name: Ejecucion pruebas unitarias
+      run: |
+          mvn package test
           
-    - name: Setup Java JDK
+    - name: Setup Java JDK para SonarCloud
       uses: actions/setup-java@v4.2.1
       with:
           java-version: '17'
