@@ -54,3 +54,13 @@ jobs:
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.organization=rafabarrerarav \
           -Dsonar.projectKey=RafaBarreraRav_microservicio-java
+            
+            
+    -  name: SonarQube Quality Gate Check
+       env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        SONAR_HOST_URL: https://sonarcloud.io \
+       uses: SonarSource/sonarqube-quality-gate-action@v1.1.0
+       with: 
+        scanMetadataReportFile: target/sonar/report-task.txt
+          
