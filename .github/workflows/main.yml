@@ -54,5 +54,13 @@ jobs:
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.organization=rafabarrerarav \
           -Dsonar.projectKey=RafaBarreraRav_microservicio-java
-            
+
+    - name: SonarQube Scan
+      uses: sonarsource/sonarqube-scan-action@master
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        SONAR_HOST_URL: =https://sonarcloud.io
+        
+    - name: "Example show SonarQube Quality Gate Status value"
+      run: echo "The Quality Gate status is ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }}" 
 
