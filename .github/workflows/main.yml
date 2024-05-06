@@ -64,8 +64,8 @@ jobs:
           ## used to debug sonarqube-scan-action
           args: >
             -Dsonar.verbose=true
-            -Dsonar.projectKey=RafaBarreraRav_microservicio-java # Reemplaza con tu clave de proyecto
-            -Dsonar.organization=rafabarrerarav # Reemplaza con el nombre de tu organización en SonarQube
+            -Dsonar.projectKey=RafaBarreraRav_microservicio-java
+            -Dsonar.organization=rafabarrerarav
       
         
     - name: "Example show SonarQube Quality Gate Status value"
