@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class HttpRequestTest {
-	String password = "12345"
+	String password = "12345";
 
 	@LocalServerPort
 	private int port;
