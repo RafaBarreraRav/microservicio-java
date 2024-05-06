@@ -55,8 +55,12 @@ jobs:
           -Dsonar.organization=rafabarrerarav \
           -Dsonar.projectKey=RafaBarreraRav_microservicio-java
 
+    - name: Build with Maven
+      run: mvn clean install
+
     - name: SonarQube Scan
       uses: sonarsource/sonarqube-scan-action@master
+      
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: https://sonarcloud.io
@@ -66,6 +70,7 @@ jobs:
             -Dsonar.verbose=true
             -Dsonar.projectKey=RafaBarreraRav_microservicio-java
             -Dsonar.organization=rafabarrerarav
+            -Dsonar.java.binaries=target/classes
       
         
     - name: "Example show SonarQube Quality Gate Status value"
