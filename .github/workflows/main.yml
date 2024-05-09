@@ -60,9 +60,13 @@ jobs:
 
     steps:
 
+    - name: Clonacion de repositorio
+      uses: actions/checkout@v3
+
     - name: Despliegue
       run: |
-        echo "despliegue"
+        kubectl apply -f deploy.yaml
+        
       
 
 
