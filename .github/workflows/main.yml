@@ -62,6 +62,10 @@ jobs:
 
     - name: Clonacion de repositorio
       uses: actions/checkout@v4
+      
+    - name: archivos
+      run: |
+         ls -l
 
     - name: Despliegue
       run: |
