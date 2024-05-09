@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clonacion de repositorio
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       
     - name: Setup Java JDK
       uses: actions/setup-java@v4.2.1
@@ -61,11 +61,11 @@ jobs:
     steps:
 
     - name: Clonacion de repositorio
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Despliegue
       run: |
-         kubectl apply -f deploy.yaml .
+         kubectl apply -f deploy.yaml
       
 
 
